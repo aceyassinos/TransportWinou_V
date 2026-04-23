@@ -22,12 +22,23 @@ public class Alerte {
     }
 
     public void envoyerAlerte() {
-        System.out.println("Alerte : " + type + " - " + message);
+        System.out.println("Alerte envoyée : " + type + " - " + message);
     }
 
     public void afficherDetails() {
-        System.out.println("ID : " + id);
-        System.out.println("Type : " + type);
-        System.out.println("Message : " + message);
+        System.out.println("===== ALERTE =====");
+        System.out.println("ID: " + id);
+        System.out.println("Type: " + type);
+        System.out.println("Message: " + message);
+
+        if (type.equalsIgnoreCase("critique")) {
+            System.out.println("⚠ ALERTE CRITIQUE !");
+        } else if (type.equalsIgnoreCase("urgent")) {
+            System.out.println("⚠ Alerte urgente");
+        } else {
+            System.out.println("Alerte normale");
+        }
+
+        System.out.println("==================");
     }
 }
