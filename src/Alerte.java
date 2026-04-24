@@ -1,7 +1,18 @@
 public class Alerte {
-    private int id;
-    private String type;
     private String message;
+
+    public Alerte(String message) {
+        this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void envoyer() {
+        System.out.println("Alerte envoyée : " + message);
+    }
+}
 
     public Alerte(int id, String type, String message) {
         this.id = id;
