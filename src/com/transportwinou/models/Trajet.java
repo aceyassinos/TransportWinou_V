@@ -1,3 +1,4 @@
+package com.transportwinou.models;
 public class Trajet {
     private int id;
     private String depart;

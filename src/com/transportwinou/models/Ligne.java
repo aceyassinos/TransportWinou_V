@@ -1,3 +1,4 @@
+package com.transportwinou.models;
 public class Ligne {
     private int id;
     private String nom;

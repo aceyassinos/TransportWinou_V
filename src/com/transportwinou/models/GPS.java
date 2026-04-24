@@ -1,3 +1,4 @@
+package com.transportwinou.models;
 public class GPS {
 
     public void envoyerPosition(Ligne ligne, String position) {
