@@ -19,7 +19,7 @@ public class Main {
 
         System.out.println("\n--- GPS ---");
         GPS gps = new GPS();
-        gps.envoyerPosition(ligne);
+        gps.envoyerPosition(ligne, "Station République");
         gps.envoyerIncident("Panne signalée sur la ligne 7");
 
         System.out.println("\n--- Alertes ---");
