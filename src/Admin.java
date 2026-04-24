@@ -17,3 +17,11 @@ public class Admin {
         System.out.println("Consultation des statistiques du système...");
     }
 }
+    public void validerAlerte(Alerte alerte) {
+        System.out.println("Admin " + nom + " valide l'alerte : " + alerte.getMessage());
+    }
+
+    public void publierAnnonce(String annonce) {
+        System.out.println("Admin " + nom + " publie une annonce : " + annonce);
+    }
+}
